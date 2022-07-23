@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('bootstrap') %>
+    <link rel='stylesheet' href='/stylesheets/home.css' />
+  </head>
+  <body>
+    <%- include('navbar') %>
+
+
+<!-- pARTE 1 DEL HOME  -->
+
+<div class="container">
+  <div class="row">
+    <div class="col text-center nirvana">
+      <br>
+      <br>
+      <h1>NIRVANA</h1>
+      <hr>
+      <h5>Siempre a la vanguardia del inconforsmismo, buscando la esencia entre el oleo y el lienzo.</h5>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row artista">
+   <% resultArtists.forEach(artist =>{ %>
+    <div class="col tarjeta text-center">
+    <a href="/artist/oneArtist/<%= artist.artist_id %>">
+    <div class="card" style="width: 25rem;">
+      <img src="/images/artists/<%= artist.artist_img %>" class="card-img-top" alt="...">
+      <div class="card-body cbc"></a>
+        <p class="card-text ctc"><%= artist.artist_name %></p>
+      </div>
+    </div>
+  </div>
+   <% }) %>
+  </div>
+  <br>
+  <hr>
+</div>
+
+<!-- PARTE 2 DEL HOME -->
+
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h2>Obras de nuestras galerias</h2>
+    </div>
+  </div>
+<br>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8 border">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+    
+          <div class="carousel-item active">
+            <img src="./images/proyecto/obra6.jpg" class="w-100" alt="...">
+          </div>
+    
+          <% resultWorks.forEach( work =>{ %>
+          <div class="carousel-item">
+            <img src="/images/works/<%= work.work_img %>" class="w-100" alt="...">
+          </div>
+          <% }) %>
+    
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <br>
+    <br>
+
+
+  
+<!-- Parte 3 mientras busco un footer -->
+
+<div class="container-fluid foot">
+  <div class="row">
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

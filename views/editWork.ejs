@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('navbar') %>
+
+    <h2>Formulario de edicion de obra</h2>
+
+    <form action="/work/editWork/<%= resultado[0].work_id %>/<%= resultado[0].artist_id %>" method="post" enctype="multipart/form-data">
+        
+    <input type="text" name="work_name" value="<%= resultado[0].work_name %>"/>
+    <input type="text" name="description" value="<%= resultado[0].description %>"/>
+
+    <button type="submit">Ejercutar modificacion</button>
+
+    </form>
+</body>
+</html>

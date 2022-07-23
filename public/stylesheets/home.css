@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-image: url("/images/proyecto/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.nirvana {
+    color: oldlace;
+    font-weight: bold;
+}
+
+.artista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+img {
+    height: 40vh;
+}
+
+.cbc {
+    background-color: oldlace;
+}
+
+p {
+    color: goldenrod;
+}
+
+hr {
+    height: 3px !important;
+    background-color: RGB(247, 100, 49);
+}
+
+.foot {
+    height: 10vh;
+
+}
+
+h2 {
+    color: oldlace;
+}

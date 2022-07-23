@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/artist.css">
+    <%- include('bootstrap') %>
+</head>
+<body>
+    <%- include('navbar') %>
+
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="col text-center">
+                <br>
+                <h1>Registro de un nuevo artista</h1>
+            </div>
+        </div>
+        <br>
+
+    <div class="row text-center justify-content-center">
+     <div class="col-8 formulario ">
+        <form action="/artist/registerArtist" method="post" enctype="multipart/form-data">
+            <div class="form-column d-flex flex-column">
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre del artista" name="artist_name">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido del artista" name="artist_surname">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apodo" name="nick">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Email" name="email">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="password" class="form-control" placeholder="Contraseña" name="password">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Descripcion" name="description">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Telefono" name="phone_number">
+                </div>
+                <br>
+                <div class="col">
+                    <input type="file" class="form-control" placeholder="Imagen del artista" name="img">
+                </div>
+                <br>
+                <div class="col">
+                    <button type="submit" class="form-control" >Añadir Artista</button>
+                </div>
+            </div>  
+        </form>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

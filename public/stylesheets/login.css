@@ -1,0 +1,30 @@
+.bg {
+    margin: 0;
+    background-image: url("/images/proyecto/van.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.tre {
+    height: 95%;
+    padding-left: 10%;
+}
+
+p {
+    color: oldlace;
+    font-size: 55px;
+
+}
+
+button {
+    background-color: oldlace;
+    border: 2px solid RGB(198, 189, 160);
+    color: RGB(128, 151, 156);
+}
+
+input {
+    background-color: oldlace;
+    color: RGB(128, 151, 156);
+    border: 2px solid RGB(198, 189, 160);
+}
