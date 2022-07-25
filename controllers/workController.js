@@ -70,10 +70,6 @@ showEditWork = (req, res) => {
     let {work_id, artist_id} = req.params;
     let {work_name, description} = req.body;
     let sql = `UPDATE work SET work_name = "${work_name}", description = "${description}", artist_id = ${artist_id} WHERE work_id = ${work_id}`;
-    if(req.file != undefined){
-        let img = req.file.filename;
-        sql = `UPDATE work SET work_name = "${work_name}", description = "${description}", artist_id = ${artist_id}, work_img = ${img} WHERE work_id = ${work_id}`;
-    }
     connection.query(sql, (error, result) => {
         if(error) throw error;
         res.redirect(`/artist/oneArtist/${artist_id}`);

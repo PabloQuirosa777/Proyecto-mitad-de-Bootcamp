@@ -15,7 +15,14 @@ body {
 }
 
 .artista img {
-    width: 80%;
+    width: 70%;
+    height: 70vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .artista img {
+        height: 30vh;
+    }
 }
 
 button {
@@ -49,8 +56,14 @@ h2 {
 }
 
 .work img {
-    width: 80%;
-    height: 30%;
+    width: 90%;
+    height: 70vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .work img {
+        height: 30vh;
+    }
 }
 
 h3 {

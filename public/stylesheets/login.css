@@ -3,7 +3,14 @@
     background-image: url("/images/proyecto/van.jpg");
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .bg {
+        height: 50vh;
+
+    }
 }
 
 button {
@@ -18,11 +25,11 @@ input {
     border: 2px solid RGB(198, 189, 160);
 }
 
-p {
+h1 {
     color: oldlace;
     font-size: 55px;
 }
 
 .letras {
-    padding-top: 15%;
+    padding-top: 20%;
 }

@@ -14,3 +14,25 @@ h1 {
     background-color: RGB(253, 247, 235);
     opacity: 0.8;
 }
+
+.espacio {
+    height: 24vh;
+}
+
+.espacio2 {
+    height: 45vh;
+}
+
+.foot {
+    background-color: oldlace;
+}
+
+.foot a {
+    color: goldenrod;
+}
+
+.foot img {
+    width: 3vw;
+    height: 4vh;
+    filter: invert(0.5)
+}

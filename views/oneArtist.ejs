@@ -9,9 +9,9 @@
 
      <!-- Container 1 -->
 
-    <div class="container-fluid pt-5 ">
+    <div class="container pt-5 ">
       <div class="row d-flex justify-content-center pt-5">
-        <div class="col-8 text-center artista">
+        <div class="col-11 text-center artista">
             <h2><%= resultArtists[0].artist_name %></h2>
             <h2><%= resultArtists[0].artist_surname %></h2>
             <h2>"<%= resultArtists[0].nick %>"</h2>
@@ -35,7 +35,7 @@
     <div class="container">
       <div class="row d-flex flex-column align-items-center">
         <% resultWorks.forEach( work =>{ %>
-        <div class="col-6 work text-center">
+        <div class="col-10 work text-center">
           <img src="/images/works/<%= work.work_img %>" alt="">
           <br>
           <br>
@@ -52,19 +52,22 @@
       </div>
     </div>
 
+    <br>
+    <br>
+
     <div class="container-fluid foot">
       <div class="row text-center pt-5">
           <div class="col-3">
-              <img src="./images/proyecto/instagram.png" alt="">
+              <img src="/images/proyecto/instagram.png" alt="">
           </div>
           <div class="col-3">
-              <img src="./images/proyecto/twitter.png" alt="">
+              <img src="/images/proyecto/twitter.png" alt="">
           </div>
           <div class="col-3">
-              <img src="./images/proyecto/facebook.png" alt="">
+              <img src="/images/proyecto/facebook.png" alt="">
           </div>
           <div class="col-3">
-              <img src="./images/proyecto/correo.png" alt="">
+              <img src="/images/proyecto/correo.png" alt="">
           </div>
       </div>
       <div class="row text-center pt-5">

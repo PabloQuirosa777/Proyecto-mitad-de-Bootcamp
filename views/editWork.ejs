@@ -22,7 +22,7 @@
 
         <div class="row text-center justify-content-center">
             <div class="col-6 formulario">
-            <form action="/work/editWork/<%= resultado[0].work_id %>/<%= resultado[0].artist_id %>" method="post" enctype="multipart/form-data">
+            <form action="/work/editWork/<%= resultado[0].work_id %>/<%= resultado[0].artist_id %>" method="post">
             <br>
             <div class="col">
             <input type="text" class="form-control" name="work_name" value="<%= resultado[0].work_name %>"/>
@@ -38,13 +38,29 @@
         </div>
     </div>
 
-    <div class="container-fluid pt-5">
-        <div class="row">
-          <div class="col">
-            <%- include('footer') %>
-      
-          </div>
+    <div class="espacio2"></div>
+
+    <div class="container-fluid foot">
+        <div class="row text-center pt-3">
+            <div class="col-3">
+                <img src="/images/proyecto/instagram.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="/images/proyecto/twitter.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="/images/proyecto/facebook.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="/images/proyecto/correo.png" alt="">
+            </div>
+        </div>
+        <div class="row text-center pt-5">
+            <div class="col">
+                <p>@Untitled.All right reserved.Socratech</p>
+            </div>
         </div>
     </div>
+      
 </body>
 </html>

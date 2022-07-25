@@ -14,6 +14,14 @@ body {
     height: 100vh;
 }
 
+@media only screen and (max-width: 600px) {
+    .home {
+        height: 30vh;
+    }
+}
+
+
+
 .nirvana {
     color: oldlace;
     font-weight: bold;
@@ -27,14 +35,20 @@ body {
     gap: 20px;
 }
 
+.artista img {
+    height: 65vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .artista img {
+        height: 30vh;
+    }
+}
+
 .tarjeta:hover {
     transform: scale(1.1);
 }
 
-
-img {
-    height: 40vh;
-}
 
 .cbc {
     background-color: oldlace;
@@ -44,14 +58,17 @@ p {
     color: goldenrod;
 }
 
-.carrusel {
-    height: 50vh;
-}
-
 .artista hr {
     height: 3px !important;
     background-color: oldlace;
 }
+
+
+.carrusel img {
+    height: 70vh;
+}
+
+
 
 h2 {
     color: oldlace;
