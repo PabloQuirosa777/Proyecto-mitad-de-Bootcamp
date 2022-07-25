@@ -6,55 +6,73 @@
   </head>
   <body>
     <%- include('navbar') %>
-    <br>
 
      <!-- Container 1 -->
 
-    <div class="container">
-      <div class="row d-flex justify-content-center">
+    <div class="container-fluid pt-5 ">
+      <div class="row d-flex justify-content-center pt-5">
         <div class="col-8 text-center artista">
             <h2><%= resultArtists[0].artist_name %></h2>
             <h2><%= resultArtists[0].artist_surname %></h2>
             <h2>"<%= resultArtists[0].nick %>"</h2>
             
-            <img src="/images/artists/<%= resultArtists[0].artist_img %>" alt="" width="800">
+            <img src="/images/artists/<%= resultArtists[0].artist_img %>" alt="">
             <br>
             <br>
             <button type="submit"><a href="/work/registerWork/<%= resultArtists[0].artist_id %>">Añadir obra al artista</a></button>
         </div>
       </div>
-      <hr>
     </div>
     <br>
    
     
     <!-- Container 2 -->
     <div class="text-center">
-      <h2>Todas sus obras</h2>
+      <h2>Todas sus obras en la galeria</h2>
     </div>
     <br>
     <br>
     <div class="container">
-    <div class="row d-flex">
-      
-      <% resultWorks.forEach( work =>{ %>
+      <div class="row d-flex flex-column align-items-center">
+        <% resultWorks.forEach( work =>{ %>
         <div class="col-6 work text-center">
           <img src="/images/works/<%= work.work_img %>" alt="">
           <br>
           <br>
           <h3><%= work.work_name %></h3>
-          <h4><%= work.description %></h4>
+          <h4>Mensaje artistico: <%= work.description %></h4>
           <br>
           <button type="submit">
           <a href="/work/deleteWork/<%= work.work_id%>/<%= work.artist_id%>">Eliminar obra del artista</a></button>
           <button type="submit"><a href="/work/editWork/<%= work.work_id%> ">Modificar obra</a></button>
-          <br>
-          <br>
         </div>
-      <% }) %>
+        <br>
+        <br>
+        <% }) %>
+      </div>
     </div>
-  </div>
 
+    <div class="container-fluid foot">
+      <div class="row text-center pt-5">
+          <div class="col-3">
+              <img src="./images/proyecto/instagram.png" alt="">
+          </div>
+          <div class="col-3">
+              <img src="./images/proyecto/twitter.png" alt="">
+          </div>
+          <div class="col-3">
+              <img src="./images/proyecto/facebook.png" alt="">
+          </div>
+          <div class="col-3">
+              <img src="./images/proyecto/correo.png" alt="">
+          </div>
+      </div>
+      <div class="row text-center pt-5">
+          <div class="col">
+              <p>@Untitled.All right reserved.Socratech</p>
+          </div>
+      </div>
+    </div>
   
 
   </body>

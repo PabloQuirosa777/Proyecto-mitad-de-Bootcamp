@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <%- include('bootstrap') %>
-    <link rel='stylesheet' href='/stylesheets/artist2.css' />
+    <link rel='stylesheet' href='/stylesheets/artist.css' />
 </head>
 <body>
     <%- include('navbar') %>
 
-<div class="container-fluid bg">
+<div class="container-fluid pt-5 bg">
     <br>
     <div class="row">
-        <div class="col text-center">
+        <div class="col text-center pt-5">
             <h1>Añadir obra a la galeria</h1>
         </div>
     </div>
@@ -23,7 +23,7 @@
     <div class="row text-center justify-content-center">
      <div class="col-8 formulario">
         <form action="/work/workgallery" method="post" enctype="multipart/form-data">
-            <div class="form-column d-flex flex-column"></div>
+            <div class="form-column d-flex flex-column">
                 <br>
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Nombre del obra" name="work_name">
@@ -54,13 +54,23 @@
             
                 <button type="submit" class="form-control" >Añadir Obra</button>
                 </div>
+                <br>
                 </div>
+            </div>
             </form>
         </div>
     </div>
 </div>
 
 
-    
+<div class="container-fluid pt-5">
+    <div class="row">
+      <div class="col">
+        <%- include('footer') %>
+  
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

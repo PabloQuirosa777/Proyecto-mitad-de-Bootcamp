@@ -3,6 +3,15 @@ body {
     background-image: url("/images/proyecto/fondo.jpg");
     background-size: cover;
     background-position: center;
+    font: small-caps 100%/200% serif;
+    font-family: monospace;
+}
+
+.home {
+    background-image: url("/images/proyecto/home.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .nirvana {
@@ -18,6 +27,10 @@ body {
     gap: 20px;
 }
 
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+
 
 img {
     height: 40vh;
@@ -31,16 +44,33 @@ p {
     color: goldenrod;
 }
 
-hr {
-    height: 3px !important;
-    background-color: RGB(247, 100, 49);
+.carrusel {
+    height: 50vh;
 }
 
-.foot {
-    height: 10vh;
-
+.artista hr {
+    height: 3px !important;
+    background-color: oldlace;
 }
 
 h2 {
     color: oldlace;
+}
+
+.foot {
+    margin: 0;
+    bottom: 0;
+    z-index: 1;
+    background: oldlace;
+    opacity: 0.8;
+}
+
+.foot a {
+    color: goldenrod;
+}
+
+.foot img {
+    width: 3vw;
+    height: 4vh;
+    filter: invert(0.5)
 }

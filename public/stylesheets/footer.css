@@ -1,0 +1,18 @@
+.foot {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: oldlace;
+    opacity: 0.8;
+}
+
+.foot a {
+    color: goldenrod;
+}
+
+.foot img {
+    width: 3vw;
+    height: 4vh;
+    filter: invert(0.5)
+}

@@ -1,17 +1,16 @@
-.bg {
+body {
     margin: 0;
     background-image: url("/images/proyecto/fondo.jpg");
     background-size: cover;
-    height: 100vh;
+    font: small-caps 100%/200% serif;
 }
 
 h1 {
-    color: RGB(250, 131, 71);
+    color: RGB(253, 247, 235);
 }
 
 .formulario {
     border: 1px solid white;
-    background-color: RGB(247, 100, 49);
-    height: 40vh;
-    opacity: 0.5;
+    background-color: RGB(253, 247, 235);
+    opacity: 0.8;
 }

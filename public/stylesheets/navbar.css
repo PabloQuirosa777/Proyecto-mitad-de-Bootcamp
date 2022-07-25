@@ -1,0 +1,12 @@
+.navegador {
+    margin: 0;
+    background: RGB(253, 247, 235);
+    width: 100%;
+    position: fixed;
+    z-index: 80;
+}
+
+.navbar-brand {
+    color: rgb(248, 202, 84);
+    font-weight: bold;
+}

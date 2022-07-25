@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <%- include('bootstrap') %>
+    <link rel='stylesheet' href='/stylesheets/artist.css' />
 </head>
 <body>
     <%- include('navbar') %>
 
-    <h2>Formulario de edicion de obra</h2>
+    <div class="container-fluid pt-5 bg">
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <h1>Formulario de edicion de obra</h1>
+            </div>
+        </div>
+        <br>
 
-    <form action="/work/editWork/<%= resultado[0].work_id %>/<%= resultado[0].artist_id %>" method="post" enctype="multipart/form-data">
-        
-    <input type="text" name="work_name" value="<%= resultado[0].work_name %>"/>
-    <input type="text" name="description" value="<%= resultado[0].description %>"/>
+        <div class="row text-center justify-content-center">
+            <div class="col-6 formulario">
+            <form action="/work/editWork/<%= resultado[0].work_id %>/<%= resultado[0].artist_id %>" method="post" enctype="multipart/form-data">
+            <br>
+            <div class="col">
+            <input type="text" class="form-control" name="work_name" value="<%= resultado[0].work_name %>"/>
+            </div>
+            <br>
+            <div class="col">
+            <input type="text" class="form-control" name="description" value="<%= resultado[0].description %>"/>
+            </div>
+            <br>
+            <button type="submit" class="form-control">Ejercutar modificacion</button>
+            <br>
+            </form> 
+        </div>
+    </div>
 
-    <button type="submit">Ejercutar modificacion</button>
-
-    </form>
+    <div class="container-fluid pt-5">
+        <div class="row">
+          <div class="col">
+            <%- include('footer') %>
+      
+          </div>
+        </div>
+    </div>
 </body>
 </html>
